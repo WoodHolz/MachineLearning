@@ -29,7 +29,4 @@ def knn_iris():
     print("准确率为：\n", score)
     return None
 
-
-if __name__ == "__main__":
-    # 代码1：用KNN算法对鸢尾花进行分类
-    knn_iris()
+knn_iris()

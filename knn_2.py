@@ -1,3 +1,9 @@
+import numpy as np
+import operator
+
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+
 class KNNClassify():
 
     def __init__(self,k=8, p=2):
@@ -38,11 +44,7 @@ class KNNClassify():
                 j += 1
         return ('accuracy: {:.10%}'.format(j / len(y_test)))
 
-import numpy as np
-import operator
 
-from sklearn import datasets
-from sklearn.model_selection import train_test_split
 # 获取数据集，并进行8:2切分
 iris = datasets.load_iris()
 X = iris.data
