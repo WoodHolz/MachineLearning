@@ -2,6 +2,7 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
+import matplotlib.pyplot as plt
 
 
 def knn_iris():
@@ -27,6 +28,15 @@ def knn_iris():
     # 方法2：计算准确率
     score = estimator.score(x_test, y_test)
     print("准确率为：\n", score)
+
+    # 可视化
+    plt.scatter(x_test[:, 0], x_test[:, 1], c=y_predict)
+    plt.xlabel('Sepal Length')
+    plt.ylabel('Sepal Width')
+    plt.title('KNN Iris Classification')
+    plt.show()
+
     return None
+
 
 knn_iris()
