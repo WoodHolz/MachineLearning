@@ -4,7 +4,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 import matplotlib.pyplot as plt
 
-
 def knn_iris():
     # 1）获取数据
     iris = load_iris()
@@ -37,6 +36,5 @@ def knn_iris():
     plt.show()
 
     return None
-
 
 knn_iris()
