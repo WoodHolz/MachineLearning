@@ -6,7 +6,6 @@ from sklearn.metrics import roc_curve, auc, precision_recall_curve, average_prec
 from sklearn.preprocessing import label_binarize
 import matplotlib.pyplot as plt
 
-
 def knn_iris():
     # 1）获取数据
     iris = load_iris()
